@@ -11,7 +11,6 @@ import Slide from "react-reveal/Slide";
 export default function service({ dataService }) {
   useEffect(() => {
     const listItem = document.querySelectorAll(".service__item");
-    console.log(listItem);
 
     listItem.forEach((item) => {
       const modal = item.querySelector(".service__modal");
