@@ -1,0 +1,39 @@
+.blog{
+  .portfolio__item{
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    &:hover .portfolio__img img{
+      transform: scale(1.1)
+    }
+  }
+  .portfolio__img{
+    overflow: hidden;
+    border-radius: 10px;
+    img{
+      transition: all .4s ease-in-out;
+    }
+  }
+  .portfolio__item-info{
+    padding: 9px 0 0 0;
+  }
+  .portfolio__item-style::before {
+    position: relative;
+    content: ".";
+    font-size: 40px;
+    top: -3px;
+    color: #7e7e7e;
+    padding: 0 5px;
+  }
+  .service__modal.blog{
+    display: flex;
+  }
+}
+// Responsive tablet
+@media (max-width : 1200px) {
+  .blog {
+    button.slick-arrow.slick-prev, button.slick-arrow.slick-next{
+      top: 0;
+      transform: translate(0,100%);
+    }
+  }
+}

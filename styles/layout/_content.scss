@@ -1,0 +1,16 @@
+.content {
+  width: 100%;
+  margin-left: 320px;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+@media (max-width: 1200px) {
+  .content{
+    margin-left: 0;
+  }
+}
+.my-blog.dark-mode{
+  .content{
+    background: $dark-mode;
+  }
+}

@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+// Reset
+@import 'base/reset';
+
+// Variables
+@import 'base/variables';
+
+//Helpers classes
+@import 'base/helpers';
+@import 'base/functions';
+@import 'base/mixins';
+
+// Base Style
+@import 'base/fonts';
+@import 'base/icons';
+@import 'base/grid';
+@import 'base/extends';
+@import 'base/typography';
+@import 'base/table';
+@import 'base/customDotsSlick';
+
+// Layout
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/content';
+@import 'layout/sidebar';
+
+// Component
+@import 'components/block-home';
+@import 'components/block-about';
+@import 'components/block-services';
+@import 'components/block-portfolio';
+@import 'components/block-testimonial';
+@import 'components/block-blog';
+@import 'components/block-contact';
+
+
+
+
+
+

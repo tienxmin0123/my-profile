@@ -1,0 +1,38 @@
+// Grid variables
+$containerWide : 1200px;
+$containerSupperWideLarge : 1530px;
+$containerMarginMobile: 20px;
+$containerMarginTablet: 20px;
+$container: 1040px;
+$containerSuperWide: 960px;
+$containerMediumWide: 768px;
+
+.container {
+  max-width: 100%;
+  margin-left: $containerMarginMobile;
+  margin-right: $containerMarginMobile;
+  @media (min-width: $middleTablet) {
+    margin-left: $containerMarginTablet;
+    margin-right: $containerMarginTablet;
+  }
+  @media (min-width: $middleTablet) {
+    max-width: $container;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktopWide) {
+    max-width: $containerSuperWide;
+    margin: 0 20px;
+  }
+
+  @media (min-width: $desktopSupperWide) {
+    max-width: $containerSupperWideLarge;
+  }
+  @media (max-width:$desktopSupperWideLarge) {
+    margin: 0 20px;
+  }
+  @media (max-width:1200px) {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}

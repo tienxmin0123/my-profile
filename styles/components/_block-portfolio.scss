@@ -1,0 +1,55 @@
+.portfolio{
+  width: 100%;
+  height: auto;
+  padding: 120px 0;
+  clear: both;
+  position: relative;
+  &__title{
+    margin: 0 0 25px 0;
+    h2{
+      margin: 0;
+    }
+  }
+  &__desc{
+    max-width: 600px;
+    p {
+      margin: 0
+    }
+  }
+  &__slicks{
+    position: relative;
+    width: 100%;
+    padding-top: 60px;
+    margin: 0 -15px;
+  }
+  &__item{
+    width: calc( 100%  - 30px) !important;
+    margin: 0 15px;
+    border-radius: 10px;
+  }
+  &__img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    img{
+      border-radius: 10px;
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
+.my-blog.dark-mode{
+  .portfolio{
+    background : $dark-mode-secondary;
+    color: $white;
+  }
+}
+// Responsive mobile
+@media (max-width : 767px) {
+  .portfolio{
+    &__slicks{
+      margin: 0;
+    }
+  }  
+}

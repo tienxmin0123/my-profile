@@ -1,0 +1,237 @@
+.contact {
+  width: 100%;
+  height: auto;
+  clear: both;
+  background-color: #f5f8fc;
+  padding: 120px 0;
+  &__title {
+    margin: 0 0 25px 0;
+    h2 {
+      margin: 0;
+    }
+  }
+  &__desc {
+    p {
+      margin: 0;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    width: 100%;
+    height: auto;
+    clear: both;
+    padding-top: 60px;
+    margin-bottom: 30px;
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    width: calc((100% / 3) - 30px);
+    background-color: #fff;
+    padding: 33px 35px 41px;
+    border-radius: 6px;
+    margin: 20px 15px;
+  }
+  &__item-icon {
+    width: 55px;
+    height: 55px;
+    background: #34495e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 25px;
+      -webkit-filter: invert(1);
+      filter: invert(1);
+      height: 25px;
+    }
+  }
+  &__item-content {
+    flex: 1 1;
+    padding-left: 15px;
+  }
+  &__item-title {
+    margin-bottom: 5px;
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0;
+      text-transform: capitalize;
+    }
+  }
+  &__item-list-method {
+    ul {
+      li {
+        a {
+          text-decoration: none;
+          color: $black;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  &__item-email {
+    word-break: break-all;
+  }
+  &__mainpart {
+    width: 100%;
+    height: auto;
+    clear: both;
+    display: flex;
+    // margin:0 -30px;
+    justify-content: space-between;
+  }
+  &__form,
+  &__map {
+    width: calc((100% / 2) - 30px);
+  }
+  &__form {
+    background-color: #fff;
+    padding: 50px 45px 55px;
+    border-radius: 6px;
+  }
+  &__title-form {
+    width: 100%;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    span {
+      opacity: 0.8;
+    }
+    h3 {
+      font-weight: 600;
+      color: #1a1a1a;
+      letter-spacing: 1.2px;
+      margin: 0;
+    }
+  }
+  &__form-group {
+    margin: 0 0 60px 0;
+    width: 100%;
+    input {
+      width: 100%;
+      height: 50px;
+      border: none;
+      border-bottom: 1px solid #cbd3d9;
+      background-color: transparent;
+      font-size: 16px;
+      color: #7e7e7e;
+      font-weight: 500;
+      font-family: "Poppins";
+      border-radius: 0;
+      min-width: auto;
+      letter-spacing: 1.4px;
+      line-height: 1.6;
+      padding: 10px;
+      transition: all 0.3s ease;
+      outline: none;
+    }
+  }
+  &__form-btn {
+    button {
+      border-radius: 6px;
+      padding: 11px 33px;
+      background: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+      display: inline-block;
+      border: 2px solid #7e7e7e;
+      transition: all 0.3s ease;
+      text-transform: capitalize;
+      cursor: pointer;
+      &:hover {
+        color: #fff;
+        background-color: $black;
+        border-color: $black;
+      }
+    }
+  }
+  &__map {
+    border: 5px solid #fff;
+    border-radius: 6px;
+    height: auto;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.my-blog.dark-mode {
+  .contact {
+    background: $dark-mode;
+    color: $white;
+    &__item {
+      background: $black;
+    }
+    &__item-list-method {
+      ul {
+        li {
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+    &__form {
+      background: $black;
+    }
+    &__title-form{
+      h3{
+        color: $white;
+      }
+    }
+    &__form-btn {
+      button {
+        color: $dark-mode;
+        background: $white;
+        &:hover{
+          color: $white;
+          background: $black;
+          border-color: $white;
+        }
+      }
+    }
+  }
+}
+// Responsive tablet
+@media (max-width: 1040px) {
+  .contact {
+    &__mainpart {
+      flex-direction: column;
+    }
+    &__form,
+    &__map {
+      width: 100%;
+    }
+    &__map {
+      iframe {
+        min-height: 350px;
+      }
+    }
+    &__item {
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact {
+    &__item {
+      width: calc((100% / 2) - 30px);
+    }
+  }
+}
+@media (max-width: 767px) {
+  .contact {
+    &__list {
+      flex-direction: column;
+    }
+    &__item {
+      width: 100%;
+    }
+  }
+}
