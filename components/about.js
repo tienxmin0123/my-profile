@@ -61,7 +61,7 @@ export default function About({ dataAbout }) {
                   </ul>
                 </div>
                 <div className="about__content-btn">
-                  <a href={btnAbout.hrefBtn} target="_blank">
+                  <a href={btnAbout.hrefBtn} >
                     {btnAbout.titleBtn}
                   </a>
                 </div>

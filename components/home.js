@@ -48,7 +48,7 @@ export default function Home({ dataHome }) {
               {socialHome.map((x) => {
                 return (
                   <div className="home__content-social-link" key={x.id}>
-                    <a href={`https://www.${x.name}.com`} target="_blank">
+                    <a href={`https://www.${x.name}.com`}>
                       <img src={`/assets/images/${x.name}.svg`} alt={x.name} />
                     </a>
                   </div>
@@ -56,7 +56,7 @@ export default function Home({ dataHome }) {
               })}
             </div>
             <div className="home__content-btn">
-              <a href={btnHome.href} target="_blank">
+              <a href={btnHome.href}>
                 {btnHome.name}
               </a>
             </div>
