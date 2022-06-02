@@ -12,8 +12,13 @@ export default function Modal({ dataModal }) {
     titleModal,
     questionModal,
     descModal,
+    descModalBottom,
     answerModal,
     listAnswerModal,
+    date,
+    style,
+    actModal,
+    socialModalIcon,
   } = dataModal;
   useEffect(() => {
     const items = document.querySelectorAll(".js-item");
@@ -61,6 +66,15 @@ export default function Modal({ dataModal }) {
             <img src={imgUrlModal} alt={titleModal}></img>
           </div>
           <div className="service__modal-title">
+            {(date && date !== "undefined") ||
+            (style && style !== "undefined") ? (
+              <div class="portfolio__item-new-details">
+                <span class="portfolio__item-date">{date}</span>
+                <span class="portfolio__item-style">{style}</span>
+              </div>
+            ) : (
+              ""
+            )}
             <h3>{titleModal}</h3>
           </div>
           <div className="service__modal-desc">
@@ -74,26 +88,54 @@ export default function Modal({ dataModal }) {
             </div>
             <div className="service__modal-answer">
               <div className="service__modal-answer-primary">
-                <p>{answerModal[0]}</p>
+                {actModal && actModal !== "undefined" ? (
+                  <div className="service__modal-quotes">
+                    <p>{answerModal.map((item) => item)}</p>
+                  </div>
+                ) : (
+                  <p>{answerModal[0]}</p>
+                )}
               </div>
               <div className="service__modal-answer-list">
                 <ul>
-                  {listAnswerModal.map((x, idx) => {
-                    return (
-                      <li key={idx}>
-                        <p>{x}</p>
-                      </li>
-                    );
-                  })}
+                  {listAnswerModal && listAnswerModal !== "undefined"
+                    ? listAnswerModal.map((x, idx) => {
+                        return (
+                          <li key={idx}>
+                            <p>{x}</p>
+                          </li>
+                        );
+                      })
+                    : ""}
                 </ul>
               </div>
               <div className="service__modal-answer-secondary">
-                <p>{answerModal[1]}</p>
+                <p>{actModal && actModal !== "undefined" ? descModalBottom.map(item => item) : answerModal[1]}</p>
               </div>
             </div>
           </div>
+          {actModal && actModal !== "undefined" ? (
+            <div className="service__modal-social">
+              <div className="service__modal-social-action">
+                <span>{actModal}</span>
+              </div>
+              <div className="service__modal-social-list">
+                <ul>
+                  {socialModalIcon.map((item) => (
+                    <li key={item.id}>
+                      <a href={`https://${item.name}.com`}>
+                        <img src={item.url} alt={item.name}></img>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
-        <div className="service__modal-btn-close  js-close" >
+        <div className="service__modal-btn-close  js-close">
           <AiOutlineCloseCircle />
         </div>
       </div>

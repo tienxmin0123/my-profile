@@ -9,7 +9,7 @@ export const dataTestimonials = {
       imgUrl : '/assets/images/author2.png',
       authorName : 'Tien vu',
       job : 'App developer',
-      description : 'Lorem ipsum dolor sit amet, consect Testimonials Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum sit nibh amet egestas tellus.'
+      description : 'Lorem ipsum dolor sit amet, consect Testimonials Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum sit nibh amet egestas tellus. Lorem ipsum dolor sit amet, consect Testimonials Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum sit nibh amet egestas tellus.'
     },
     {
       id : 2,
