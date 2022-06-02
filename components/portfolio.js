@@ -3,12 +3,13 @@ import React, { Fragment } from "react";
 // Import slick slider framework
 import Slider from "react-slick";
 import Slide from "react-reveal/Slide";
+import ReactTooltip from "react-tooltip";
 
 // Import slick slider css
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import ModalBlog from "../components/modal/modalBlog"
+import ModalBlog from "../components/modal/modalBlog";
 
 export default function Portfolio({ data }) {
   const { title, desc, listItem, quotesImg, componentName } = data;
@@ -93,12 +94,27 @@ export default function Portfolio({ data }) {
                     authorName,
                     job,
                     modal,
+                    linkSocial
                   } = item;
                   return (
                     <React.Fragment key={id}>
-                      <div className="portfolio__item">
+                      <div
+                        data-tip={
+                          componentName === "portfolio" ? 'View More' : ""
+                        }
+                        className="portfolio__item"
+                      >
                         {componentName === "portfolio" ? (
-                          <a href={`#${componentName}`}>
+                          <ReactTooltip
+                            place="bottom"
+                            type="light"
+                            effect="float"
+                          />
+                        ) : (
+                          ""
+                        )}
+                        {componentName === "portfolio" ? (
+                          <a href={linkSocial}>
                             <div className="portfolio__img">
                               <img src={imgUrl} alt="img slider"></img>
                             </div>
