@@ -54,7 +54,7 @@
     }
     &:hover .service__item-btn i::before {
       display: block;
-      opacity: 0.8;
+      opacity: 1;
       background: #999;
     }
   }
@@ -82,7 +82,7 @@
         content: "";
         display: none;
         top: 45%;
-        right: 22px;
+        right: 22.5624px;
         height: 2px;
         width: 15px;
         position: absolute;
@@ -154,13 +154,17 @@
     &-btn-close {
       position: absolute;
       cursor: pointer;
-      top: 5%;
+      top: 0;
       right: 20%;
       padding: 10px;
       svg {
         color: $white;
         width: 50px;
         height: 50px;
+      }
+      @media (max-width : 1600px) {
+        transform: translateY(10%);
+        right: 15%;
       }
     }
   }
@@ -195,7 +199,13 @@
 }
 
 //  Responsive tablet
-
+@media (max-width: 1200px) {
+  .service {
+    &__modal-btn-close{
+      right:0;
+    }
+  }
+}
 @media (max-width: 1040px) {
   .service {
     &__item {

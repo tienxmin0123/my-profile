@@ -8,6 +8,8 @@ import Slide from "react-reveal/Slide";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import ModalBlog from "../components/modal/modalBlog"
+
 export default function Portfolio({ data }) {
   const { title, desc, listItem, quotesImg, componentName } = data;
 
@@ -64,6 +66,13 @@ export default function Portfolio({ data }) {
       id={componentName}
     >
       <div className="container">
+        {/* {componentName === "blog" ? (
+          <div className={`service__modal js-modal ${componentName}`}>
+            <ModalBlog dataModal={listItem} />
+          </div>
+        ) : (
+          ""
+        )} */}
         <div className="portfolio__title">
           <h2>{title}</h2>
         </div>

@@ -21,23 +21,23 @@ export default function Modal({ dataModal }) {
     const closes = document.querySelectorAll(".js-close");
     const stops = document.querySelectorAll(".js-stop");
     ///
-    function showBuyTickets(id) {
+    function showModal(id) {
       modals[id].classList.add("is-active");
     }
 
-    function hidenBuy(id) {
+    function hiddenModal(id) {
       modals[id].classList.remove("is-active");
     }
 
     closes.forEach((item, index) =>
       item.addEventListener("click", () => {
-        hidenBuy(index);
+        hiddenModal(index);
       })
     );
 
     modals.forEach((item, index) =>
       item.addEventListener("click", () => {
-        hidenBuy(index);
+        hiddenModal(index);
       })
     );
 
@@ -49,7 +49,7 @@ export default function Modal({ dataModal }) {
 
     items.forEach((item, index) => {
       item.addEventListener("click", () => {
-        showBuyTickets(index);
+        showModal(index);
       });
     });
   }, []);
