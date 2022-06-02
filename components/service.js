@@ -9,36 +9,36 @@ import Modal from "./modal/modal";
 import Slide from "react-reveal/Slide";
 
 export default function Service({ dataService }) {
-  useEffect(() => {
-    const listItem = document.querySelectorAll(".service__item");
+  // useEffect(() => {
+  //   const listItem = document.querySelectorAll(".service__item");
 
-    listItem.forEach((item) => {
-      const modal = item.querySelector(".service__modal");
-      const modalClose = item.querySelector(".service__modal-btn-close");
-      const modalContainer = modal.querySelector(".service__modal-container");
-      item.addEventListener("click", () => {
-        listItem.forEach((anotherItem) => {
-          if (item !== anotherItem) {
-            modal.addEventListener("click", () => {
-              modal.classList.remove("is-active");
-              modalContainer.addEventListener("click", function (event) {
-                event.stopPropagation();
-              });
-            });
-          }
-        });
-        modal.classList.add("is-active");
-      });
-      document.addEventListener("keypress", (e) => {
-        if (e.key === "Escape") {
-          modal.classList.remove("is-active");
-        }
-      });
-      modalClose.addEventListener("click", () => {
-        modal.classList.remove("is-active");
-      });
-    });
-  }, []);
+  //   listItem.forEach((item) => {
+  //     const modal = item.querySelector(".service__modal");
+  //     const modalClose = item.querySelector(".service__modal-btn-close");
+  //     const modalContainer = modal.querySelector(".service__modal-container");
+  //     item.addEventListener("click", () => {
+  //       listItem.forEach((anotherItem) => {
+  //         if (item !== anotherItem) {
+  //           modal.addEventListener("click", () => {
+  //             modal.classList.remove("is-active");
+  //             modalContainer.addEventListener("click", function (event) {
+  //               event.stopPropagation();
+  //             });
+  //           });
+  //         }
+  //       });
+  //       modal.classList.add("is-active");
+  //     });
+  //     document.addEventListener("keypress", (e) => {
+  //       if (e.key === "Escape") {
+  //         modal.classList.remove("is-active");
+  //       }
+  //     });
+  //     modalClose.addEventListener("click", () => {
+  //       modal.classList.remove("is-active");
+  //     });
+  //   });
+  // }, []);
 
   const { title, desc, listItem } = dataService;
   return (
@@ -56,7 +56,7 @@ export default function Service({ dataService }) {
           {listItem.map((item, idx) => {
             const { imgUrl, title, titleBtn, modal } = item;
             return (
-              <div className="service__item" key={idx}>
+              <div className="service__item js-item" key={idx}>
                 <div className="service__item-icon">
                   <img src={imgUrl} alt={title}></img>
                 </div>
@@ -72,7 +72,7 @@ export default function Service({ dataService }) {
                 {!modal && modal !== "undefined" ? (
                   ""
                 ) : (
-                  <div className="service__modal">
+                  <div className="service__modal js-modal">
                     <Modal dataModal={modal} />
                   </div>
                 )}

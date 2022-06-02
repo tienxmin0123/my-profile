@@ -55,7 +55,7 @@
     &:hover .service__item-btn i::before {
       display: block;
       opacity: 0.8;
-      background: #a3a3a3;
+      background: #999;
     }
   }
   &__item-icon {
@@ -86,7 +86,7 @@
         height: 2px;
         width: 15px;
         position: absolute;
-        background: #666666;
+        background: #999;
         opacity: 0;
       }
       svg {
@@ -117,12 +117,11 @@
     &-container {
       height: 75vh;
       width: 968px;
-      max-height: 900px;
-      max-width: calc(100% - 48px);
-      margin: 0 auto;
+      overflow-y: scroll;
+    }
+    &-content{
       padding: 50px;
       border-radius: 5px;
-      overflow-y: scroll;
       background: #fff;
     }
     &-img {

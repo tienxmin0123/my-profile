@@ -5,7 +5,7 @@ export const dataService = {
   listItem : [
     {
       id : 1,
-      imgUrl : '/assets/images/computer.SVG',
+      imgUrl : '/assets/images/computer.svg',
       title : 'Motion & Web Graphy',
       titleBtn : 'Learn More',
       modal : {
@@ -18,7 +18,7 @@ export const dataService = {
       },
     },
     {
-      imgUrl : '/assets/images/pen.SVG',
+      imgUrl : '/assets/images/pen.svg',
       title : 'Motion & Web Graphy',
       titleBtn : 'Learn More',
       modal : {
@@ -31,7 +31,7 @@ export const dataService = {
       },
     },
     {
-      imgUrl : '/assets/images/mobile.SVG',
+      imgUrl : '/assets/images/mobile.svg',
       title : 'Motion & Web Graphy',
       titleBtn : 'Learn More',
       modal : {
@@ -44,7 +44,7 @@ export const dataService = {
       },
     },
     {
-      imgUrl : '/assets/images/computer2.SVG',
+      imgUrl : '/assets/images/computer2.svg',
       title : 'Motion & Web Graphy',
       titleBtn : 'Learn More',
       modal : {
