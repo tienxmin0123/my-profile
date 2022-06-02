@@ -69,8 +69,8 @@ export default function Portfolio({ data }) {
       <div className="container">
         {componentName === "blog" ? (
           <>
-            {listItem.map((item) => (
-              <div className={`service__modal js-modal ${componentName}`}>
+            {listItem.map((item,idx) => (
+              <div className={`service__modal js-modal ${componentName}`} key={idx}>
                 <Modal dataModal={item.modal} />
               </div>
             ))}

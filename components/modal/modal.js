@@ -68,9 +68,9 @@ export default function Modal({ dataModal }) {
           <div className="service__modal-title">
             {(date && date !== "undefined") ||
             (style && style !== "undefined") ? (
-              <div class="portfolio__item-new-details">
-                <span class="portfolio__item-date">{date}</span>
-                <span class="portfolio__item-style">{style}</span>
+              <div className="portfolio__item-new-details">
+                <span className="portfolio__item-date">{date}</span>
+                <span className="portfolio__item-style">{style}</span>
               </div>
             ) : (
               ""
@@ -96,7 +96,8 @@ export default function Modal({ dataModal }) {
                   <p>{answerModal[0]}</p>
                 )}
               </div>
-              <div className="service__modal-answer-list">
+              {!questionModal && questionModal !== "undefined" ? (
+                <div className="service__modal-answer-list">
                 <ul>
                   {listAnswerModal && listAnswerModal !== "undefined"
                     ? listAnswerModal.map((x, idx) => {
@@ -109,6 +110,7 @@ export default function Modal({ dataModal }) {
                     : ""}
                 </ul>
               </div>
+              ) : ''}
               <div className="service__modal-answer-secondary">
                 <p>{actModal && actModal !== "undefined" ? descModalBottom.map(item => item) : answerModal[1]}</p>
               </div>
