@@ -41,7 +41,7 @@ export default function Home({ dataHome }) {
           <div className="home__content-title">
             <h1>
               <Typed
-                strings={[`${titleHome[0]}`, `${titleHome[1]}`]}
+                strings={[...titleHome]}
                 typeSpeed={150}
                 backSpeed={50}
                 loop
