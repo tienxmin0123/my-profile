@@ -91,7 +91,7 @@ export default function Portfolio({ data }) {
                         {componentName === "portfolio" ? (
                           <a href={`#${componentName}`}>
                             <div className="portfolio__img">
-                              <img src={imgUrl} alt="img slider" />
+                              <img src={imgUrl} alt="img slider"></img>
                             </div>
                           </a>
                         ) : (
@@ -141,7 +141,7 @@ export default function Portfolio({ data }) {
                         <div className="portfolio__item-top">
                           <div className="portfolio__item-author">
                             <div className="portfolio__img">
-                              <img src={imgUrl} alt="img slider" />
+                              <img src={imgUrl} alt="img slider"></img>
                             </div>
                             <div className="portfolio__item-info">
                               <div className="portfolio__item-author">
@@ -151,7 +151,7 @@ export default function Portfolio({ data }) {
                             </div>
                           </div>
                           <div className="portfolio__item-icon">
-                            <img src={quotesImg} alt="quotes img" />
+                            <img src={quotesImg} alt="quotes img"></img>
                           </div>
                         </div>
                         <div className="portfolio__item-desc">

@@ -71,7 +71,7 @@ export default function About({ dataAbout }) {
           <Slide right cascade>
             <div className="about__content-right">
               <div className="about__content-img">
-                <img src={imgAbout} alt={productAbout} />
+                <img src={imgAbout} alt={productAbout}></img>
                 <div className="about__content-desc-img">
                   <h3>{descImgAbout[0]}</h3>
                   <span>{descImgAbout[1]}</span>

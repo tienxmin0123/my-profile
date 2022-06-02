@@ -18,7 +18,7 @@ export default function Contact({ dataContact }) {
               return (
                 <div className="contact__item" key={item.id}>
                   <div className="contact__item-icon">
-                    <img src={item.imgMethod} alt={item.method} />
+                    <img src={item.imgMethod} alt={item.method}></img>
                   </div>
                   <div className="contact__item-content">
                     <div className="contact__item-title">

@@ -31,7 +31,7 @@ export default function Home({ dataHome }) {
     <div className="home" id="home">
       <div className="container">
         <div className="home__content-img">
-          <img src={imgHome} alt={titleHome} />
+          <img src={imgHome} alt={titleHome}></img>
         </div>
         <div className="home__content-body">
           <div className="home__content-introduce">
@@ -49,7 +49,7 @@ export default function Home({ dataHome }) {
                 return (
                   <div className="home__content-social-link" key={x.id}>
                     <a href={`https://www.${x.name}.com`}>
-                      <img src={`/assets/images/${x.name}.svg`} alt={x.name} />
+                      <img src={`/assets/images/${x.name}.svg`} alt={x.name}></img>
                     </a>
                   </div>
                 );

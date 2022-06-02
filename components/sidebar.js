@@ -36,7 +36,7 @@ export default function Sidebar({ dataSidebar }) {
     <div className="sidebar">
       <div className="sidebar__header">
         <div className="sidebar__header-logo">
-          <img src={logoUrl} alt="logo" />
+          <img src={logoUrl} alt="logo"></img>
         </div>
         <div className="sidebar__header-icon">
           <i className="normal-mode">
@@ -61,7 +61,7 @@ export default function Sidebar({ dataSidebar }) {
                   href={`#${x.nameComponent}`}
                   className={`sidebar__menu-item-link`}
                 >
-                  <img src={x.iconComponent} alt="logo link" />
+                  <img src={x.iconComponent} alt="logo link"></img>
                   <span>{x.nameComponent}</span>
                 </a>
               </li>
@@ -71,7 +71,7 @@ export default function Sidebar({ dataSidebar }) {
       </div>
       <div className="sidebar__footer">
         <div className="sidebar__footer-img">
-          <img src={imgAuthorUrl} alt="author" />
+          <img src={imgAuthorUrl} alt="author"></img>
         </div>
         <div className="sidebar__footer-info">
           <div className="sidebar__footer-info-name">{nameAuthor}</div>

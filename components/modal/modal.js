@@ -18,7 +18,7 @@ export default function Modal({ dataModal }) {
     <>
       <div className="service__modal-container">
         <div className="service__modal-img">
-          <img src={imgUrlModal} alt={titleModal} />
+          <img src={imgUrlModal} alt={titleModal}></img>
         </div>
         <div className="service__modal-title">
           <h3>{titleModal}</h3>

@@ -58,7 +58,7 @@ export default function Service({ dataService }) {
             return (
               <div className="service__item" key={idx}>
                 <div className="service__item-icon">
-                  <img src={imgUrl} alt={title} />
+                  <img src={imgUrl} alt={title} ></img>
                 </div>
                 <div className="service__item-title">
                   <h3>{title}</h3>

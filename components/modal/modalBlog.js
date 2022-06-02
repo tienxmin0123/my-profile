@@ -12,7 +12,7 @@ export default function ModalBlog({ dataModal }) {
     <>
       <div className="service__modal-container">
         <div className="service__modal-img">
-          <img src={imgUrl} alt={imgUrl} />
+          <img src={imgUrl} alt={imgUrl}></img>
         </div>
         <div className="service__modal-title">
           <h3>{imgUrl}</h3>

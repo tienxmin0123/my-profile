@@ -9,7 +9,7 @@ export default function Header({ dataHeader }) {
   return (
     <div className="sidebar header">
       <div className="sidebar__header-logo">
-        <img src={logoUrl} alt="logo" />
+        <img src={logoUrl} alt="logo"></img>
       </div>
       <div className="sidebar__header-icon">
         <div className="sidebar__header-switch-mode">
