@@ -8,7 +8,7 @@ import Slide from "react-reveal/Slide";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function portfolio({ data }) {
+export default function Portfolio({ data }) {
   const { title, desc, listItem, quotesImg, componentName } = data;
 
   const settings = {

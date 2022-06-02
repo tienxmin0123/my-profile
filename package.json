@@ -1,8 +1,11 @@
 {
   "name": "my-blog",
   "version": "0.1.0",
+  "homepage" : "https://tienxmin0123.github.io/react-gh-pages/",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -23,6 +26,7 @@
   },
   "devDependencies": {
     "eslint": "8.16.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "gh-pages": "^4.0.0"
   }
 }

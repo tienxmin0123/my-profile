@@ -17,8 +17,8 @@ import Contact from "../contact";
 // Import react hooks
 import { useEffect } from "react";
 
-export default function content() {
-  useEffect(() => {
+export default function Content() {
+  useEffect (() => {
     const contentPage = document.querySelector(".content");
     const listComponent = contentPage.childNodes;
     const listChildrenElement = document.querySelectorAll(

@@ -5,7 +5,7 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 
 // Import data
 
-export default function modal({ dataModal }) {
+export default function Modal({ dataModal }) {
   const {
     imgUrlModal,
     titleModal,

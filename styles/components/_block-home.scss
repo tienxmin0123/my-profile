@@ -48,9 +48,9 @@
     img{
       display: block;
       filter: invert(.5);
-    }
-    &:hover{
-      transform: translateY(-6px);
+      &:hover{
+        transform: translateY(-6px);
+      }
     }
   }
   &__content-btn{

@@ -4,7 +4,7 @@ import { useEffect } from "react";
 // Import reveal framework
 import Slide from "react-reveal/Slide";
 
-export default function home({ dataHome }) {
+export default function Home({ dataHome }) {
   const {
     imgHome,
     titleHome,

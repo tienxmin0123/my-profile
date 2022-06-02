@@ -4,7 +4,7 @@ import { useEffect } from "react";
 // Import icon
 import { FaMoon, FaSun } from "react-icons/fa";
 
-export default function sidebar({ dataSidebar }) {
+export default function Sidebar({ dataSidebar }) {
   const { nameAuthor, imgAuthorUrl, email, logoUrl, listComponent } =
     dataSidebar;
 
@@ -13,7 +13,7 @@ export default function sidebar({ dataSidebar }) {
     const btnList = myBlog.querySelector(".header__btn-switch-list");
     const btnClose = myBlog.querySelector(".header__btn-switch-close");
     const listBtnNormalMode = myBlog.querySelectorAll(".normal-mode");
-    const listBtnDarkMode = myBlog.querySelectorAll('.dark-mode')
+    const listBtnDarkMode = myBlog.querySelectorAll(".dark-mode");
 
     btnList.addEventListener("click", () => {
       myBlog.classList.add("active");
@@ -51,8 +51,16 @@ export default function sidebar({ dataSidebar }) {
         <ul className="sidebar__menu-list">
           {listComponent.map((x) => {
             return (
-              <li className={`sidebar__menu-item #${x.nameComponent} ${x.active ? x.active : ''}`} key={x.id}>
-                <a href={`#${x.nameComponent}`} className={`sidebar__menu-item-link`}>
+              <li
+                className={`sidebar__menu-item #${x.nameComponent} ${
+                  x.active ? x.active : ""
+                }`}
+                key={x.id}
+              >
+                <a
+                  href={`#${x.nameComponent}`}
+                  className={`sidebar__menu-item-link`}
+                >
                   <img src={x.iconComponent} alt="logo link" />
                   <span>{x.nameComponent}</span>
                 </a>
@@ -70,7 +78,6 @@ export default function sidebar({ dataSidebar }) {
           <a
             href="mailto:tienxmin0123@gmail.com"
             className="sidebar__footer-info-email"
-            target="_blank"
           >
             {email}
           </a>

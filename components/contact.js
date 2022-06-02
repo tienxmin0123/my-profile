@@ -1,7 +1,7 @@
 // Import slick slider framework
 import Slide from "react-reveal/Slide";
 
-export default function contact({ dataContact }) {
+export default function Contact({ dataContact }) {
   const { title, description, mapUrl, contact, contactForm } = dataContact;
   return (
     <div className="contact" id="contact">

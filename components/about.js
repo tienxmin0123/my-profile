@@ -1,7 +1,7 @@
 // Import reveal framework
 import Slide from "react-reveal/Slide";
 
-export default function about({ dataAbout }) {
+export default function About({ dataAbout }) {
   const {
     titleAbout,
     productAbout,

@@ -4,7 +4,7 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 import { BsList } from "react-icons/bs";
 
 
-export default function header({ dataHeader }) {
+export default function Header({ dataHeader }) {
   let { logoUrl } = dataHeader;
   return (
     <div className="sidebar header">

@@ -8,7 +8,7 @@ import Modal from "./modal/modal";
 // Import reveal framework
 import Slide from "react-reveal/Slide";
 
-export default function service({ dataService }) {
+export default function Service({ dataService }) {
   useEffect(() => {
     const listItem = document.querySelectorAll(".service__item");
 
