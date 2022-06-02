@@ -1,7 +1,7 @@
 {
   "name": "my-blog",
   "version": "0.1.0",
-  "homepage" : "https://tienxmin0123.github.io/my-profile",
+  "homepage": "https://tienxmin0123.github.io/my-profile",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
@@ -21,6 +21,7 @@
     "react-icons": "^4.3.1",
     "react-reveal": "^1.2.2",
     "react-slick": "^0.29.0",
+    "react-typed": "^1.2.0",
     "sass": "^1.52.1",
     "slick-carousel": "^1.8.1"
   },

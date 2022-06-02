@@ -1,6 +1,6 @@
 export const dataHome = {
   imgHome : '/assets/images/author.JPG',
-  titleHome : 'Web developer',
+  titleHome : ['Web developer','Graphic designer'],
   introduceHome : 'Hello, i\'m Tien Vu',
   descriptionHome : 'I\'m a Freelancer Front-end React Developer based In USA, over 6 years of professional experience.',
   btnHome : {
