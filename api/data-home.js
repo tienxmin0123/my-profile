@@ -5,7 +5,7 @@ export const dataHome = {
   descriptionHome : 'I\'m a Freelancer Front-end React Developer based In USA, over 6 years of professional experience.',
   btnHome : {
     name : 'Download CV',
-    href : 'https://nature.com'
+    href : 'https://www.topcv.vn/xem-cv/Bl9fCwBRB15VUghXUgcCCAJcV1ZXBwZXWQJVXw4c06'
   },
   socialHome : [
     {
